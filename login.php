@@ -13,7 +13,7 @@
             if ($password === $data['password']) {
                 $_SESSION['username'] = $data['username'];
                 $_SESSION['level']    = $data['level'];
-                header("location:home.php");
+                header("location:dosen.php");
                 exit;
             } else {
                 echo "<script>alert('Password salah');window.location='login.php';</script>";
